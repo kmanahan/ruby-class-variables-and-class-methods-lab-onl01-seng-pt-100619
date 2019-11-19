@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 require 'pry'
+=======
+>>>>>>> 73f2976715bbeb67d123a879592def962a266147
 class Song 
   attr_accessor :name, :artist, :genre
    
@@ -27,6 +30,7 @@ class Song
   def self.artists
     @@artists.uniq
   end  
+<<<<<<< HEAD
 # you want to be looping over the genres array though like you had originally
 
 # and that does NOT have a value at all
@@ -52,5 +56,16 @@ class Song
     end
     end
     hash 
+=======
+  
+  def self.genre_count
+    
+    hash.each do |key, value|
+      hash = {key => value}
+      if hash.has_key?(key) << value + 1 
+      else hash[key] = value
+    end
+    end
+>>>>>>> 73f2976715bbeb67d123a879592def962a266147
   end
 end
